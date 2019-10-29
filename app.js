@@ -19,3 +19,5 @@ btn.addEventListener('submit', function(e) {
 });
 
 console.log("hucscjhcgsdchjgsdchghchgsdhczdxfgchjbkl")
+
+var o = {s: 'khsbfsjfbdsjhfhj'}
