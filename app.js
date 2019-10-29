@@ -18,6 +18,6 @@ btn.addEventListener('submit', function(e) {
     e.preventDefault();
 });
 
-console.log("hucscjhcgsdchjgsdchghchgsdhczdxfgchjbkl")
+// console.log("hucscjhcgsdchjgsdchghchgsdhczdxfgchjbkl")
 
-var o = {s: 'khsbfsjfbdsjhfhj'}
+// var o = {s: 'khsbfsjfbdsjhfhj'}
