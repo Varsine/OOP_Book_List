@@ -22,4 +22,4 @@ console.log('AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
 
 console.log("hucscjhcgsdchjgsdchghchgsdhczdxfgchjbkl")
 
-var o = { s: 'khsbfsjfbdsjhfhj' }
+// var o = {s: 'khsbfsjfbdsjhfhj'}
