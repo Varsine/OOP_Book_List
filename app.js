@@ -1,48 +1,74 @@
-var btn = document.getElementById('book-form');
+var arr = [10, 12, 25, 6, 40, 9, 21, 20];
+var arr1 = [];
 
-function Book(title, author, isbn) {
-    this.title = title;
-    this.author = author;
-    this.isbn = isbn;
+// array method - forEach
+arr.forEach(function(x) {
+    console.log(x);
+});
+
+// array method - map 
+var result = arr.map(function(x) {
+    return x;
+})
+console.log(result);
+
+// array method - filter
+var result1 = arr.filter(function(x) {
+    if (x > 20) {
+        return x;
+    }
+})
+console.log(result1);
+
+// array method - every
+var result2 = arr.every(function(x) {
+    if (x > 10) {
+        return x;
+    }
+})
+console.log(result2);
+
+// array method - some
+var result3 = arr.some(function(x) {
+    if (x > 10) {
+        return x;
+    }
+})
+console.log(result3);
+
+// array method - reduce
+var result4 = arr.reduce(function(x, y) {
+    return x + y;
+})
+console.log(result4);
+
+// hoisting
+host("hello");
+
+function host(x) {
+    console.log(x);
 };
 
-btn.addEventListener('submit', function(e) {
-    var title = document.getElementById('title').value;
-    var author = document.getElementById('author').value;
-    var isbn = document.getElementById('isbn').value;
+function host(x) {
+    console.log(x + " world");
+};
 
-    var book = new Book(title, author, isbn);
-    var add = []
-    add.push(book);
-    console.log(add);
-    e.preventDefault();
-});
+x = 10;
+y = 20;
+console.log(x * y);
+var x, y;
 
-var arr = ["sg", "siy", "suhy", "su", "agh", "iuhd", "lkhd"];
-var arr1 = [1, 2, 3, 4, 5, 6, 7];
-var y = arr1.forEach(function(x) {
-    var k;
-    k = x * 5;
-    console.log(k);
-});
-var str = "kdjh";
-var m = arr.reverse();
-console.log(m);
+// call, apply, bind
+function fullName(age) {
+    return this.lastname + " " + this.firstname + " " + age;
+};
 
-var text = "";
-var i = 0;
-do {
-    text += " " + i;
-    i++;
-} while (i < 4);
-console.log(text);
+var obj = {
+    lastname: "Vars",
+    firstname: "Poghosyan"
+};
 
-function myRecursia(n) {
-    if (n < 0) {
-        return 0;
-    }
-    console.log(n)
-    return myRecursia(n - 1);
-
-}
-myRecursia(10);
+console.log(fullName.call(obj, 26));
+console.log(fullName.call(obj, [28]));
+var bd = fullName.bind(obj);
+console.log(bd(30));
